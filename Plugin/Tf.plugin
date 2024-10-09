@@ -8,7 +8,7 @@
 skip-proxy = iosapps.itunes.apple.com
 
 [Script]
-http-request ^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Linxir/loon/refs/heads/main/Script/Tf.js?token=GHSAT0AAAAAACYVRS3BWAF72IIADTES5OR2ZYGIFIQ, tag=TF区域限制解除
+http-request ^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Linxir/loon/refs/heads/main/Script/Tf.js, tag=TF区域限制解除
 
 [MITM]
 hostname = testflight.apple.com
