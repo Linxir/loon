@@ -41,8 +41,7 @@ Loon 添加脚本：
 *********************************
 
 Loon插件地址：
-https://raw.githubusercontent.com/Linxir/loon/refs/heads/main/Plugin/Tf.plugin?token=GHSAT0AAAAAACYVRS3BZUL5XKRPZAXUM4TYZYGHWUAAccount.plugin
-
+https://raw.githubusercontent.com/Linxir/loon/refs/heads/main/Plugin/Tf.plugin
 *********************************/
 
 const $ = API("TESTFLIGHT-ACCOUNT");
