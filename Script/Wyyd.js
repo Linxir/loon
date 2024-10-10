@@ -6,7 +6,7 @@
 
 [rewrite_local]
 
-^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://github.com/Linxir/loon/raw/refs/heads/main/Script/Wyyd.js
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/Linxir/loon/refs/heads/main/Script/Wyyd.js
 
 [mitm] 
 
