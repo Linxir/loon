@@ -1,16 +1,11 @@
-#!name= 源阅读
-#!desc= 解锁
+#!name=万源阅读
+#!desc=解锁
 #!author= Linxir
-#!homepage= https://github.com/NobyDa/Script/tree/master
-#!icon= https://cdn.jsdelivr.net/gh/NobyDa/mini@master/Color/testflight.png
-
-[General]
-
+#!homepage= https://github.com/Linxir/
+#!icon=https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1032.png
 
 [Script]
-http-request ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://github.com/Linxir/loon/raw/refs/heads/main/Script/Wyyd.js, tag=万源阅读
+http-response ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt script-path=https://raw.githubusercontent.com/Linxir/loon/refs/heads/main/Script/Wyyd.js, requires-body=true, timeout=60, tag=万源阅读
 
 [MITM]
 hostname = buy.itunes.apple.com
-
-
