@@ -1,26 +1,30 @@
-# NAME: Mail
-# AUTHOR: Linxir
+# NAME: Apple 
+# AUTHOR: Linxir 
 # REPO: https://github.com/Linxir/loon
-# UPDATED: 2024-10-09 16:16:11
-# DOMAIN: 9
-# DOMAIN-SUFFIX: 5
-# TOTAL: 12
+# UPDATED: 2024-10-16
+
+# --------------------------
+# 邮件服务 (Mail Services)
+# --------------------------
 DOMAIN-SUFFIX,mail.icloud.com.cn,DIRECT
 DOMAIN-SUFFIX,mail.me.com,DIRECT
-DOMAIN,apple.imap.mail.yahoo.com
-DOMAIN,apple.smtp.mail.yahoo.com
-DOMAIN,imap-mail.outlook.com
-DOMAIN,imap.gmail.com
-DOMAIN,outlook.office365.com
-DOMAIN,pop.gmail.com
-DOMAIN,smtp-mail.outlook.com
-DOMAIN,smtp.gmail.com
-DOMAIN,smtp.office365.com
-DOMAIN-SUFFIX,imap.yandex.com
-DOMAIN-SUFFIX,m.hotmail.com
-DOMAIN-SUFFIX,smtp.yandex.com
+DOMAIN-SUFFIX,mail.mac.com,DIRECT
+DOMAIN-SUFFIX,imap.yandex.com,DIRECT
+DOMAIN-SUFFIX,m.hotmail.com,DIRECT
+DOMAIN-SUFFIX,smtp.yandex.com,DIRECT
+DOMAIN,apple.imap.mail.yahoo.com,DIRECT
+DOMAIN,apple.smtp.mail.yahoo.com,DIRECT
+DOMAIN,imap-mail.outlook.com,DIRECT
+DOMAIN,imap.gmail.com,DIRECT
+DOMAIN,pop.gmail.com,DIRECT
+DOMAIN,smtp-mail.outlook.com,DIRECT
+DOMAIN,smtp.gmail.com,DIRECT
+DOMAIN,smtp.office365.com,DIRECT
+DOMAIN,outlook.office365.com,DIRECT
 
-# iCloud 服务
+# ---------------------------
+# iCloud 服务 (iCloud Services)
+# ---------------------------
 DOMAIN-SUFFIX,icloud.com,DIRECT
 DOMAIN-SUFFIX,icloud-content.com,DIRECT
 DOMAIN-SUFFIX,icloud-drive.com,DIRECT
@@ -28,67 +32,104 @@ DOMAIN-SUFFIX,icloud-backup.com,DIRECT
 DOMAIN-SUFFIX,icloud-photo-sharing.com,DIRECT
 DOMAIN-SUFFIX,icloudmail.com,DIRECT
 
-# Apple Mail 邮件服务
-DOMAIN-SUFFIX,mail.me.com,DIRECT
-DOMAIN-SUFFIX,mail.mac.com,DIRECT
-DOMAIN-SUFFIX,smtp.mail.me.com,DIRECT
-DOMAIN-SUFFIX,imap.mail.me.com,DIRECT
+# --------------------------------------
+# App Store 和应用更新 (App Store & Updates)
+# --------------------------------------
+DOMAIN-SUFFIX,itunes.apple.com,DIRECT // 商店内容，如 App、图书和音乐
+DOMAIN-SUFFIX,apps.apple.com,DIRECT // App Store 应用
+DOMAIN-SUFFIX,mzstatic.com,DIRECT // 商店资源
+DOMAIN,ppq.apple.com,DIRECT // 企业 App 验证
 
-# App Store & iTunes
-DOMAIN-SUFFIX,apps.apple.com,DIRECT
-DOMAIN-SUFFIX,itunes.apple.com,DIRECT
-DOMAIN-SUFFIX,a1.mzstatic.com,DIRECT
-DOMAIN-SUFFIX,a2.mzstatic.com,DIRECT
-DOMAIN-SUFFIX,a3.mzstatic.com,DIRECT
-DOMAIN-SUFFIX,appstore.com,DIRECT
-DOMAIN-SUFFIX,mzstatic.com,DIRECT
-
-# App Store API 调用
-DOMAIN-SUFFIX,buy.itunes.apple.com,DIRECT
-DOMAIN-SUFFIX,init.itunes.apple.com,DIRECT
-
-# Apple Music
+# ---------------------------
+# Apple Music 服务 (Apple Music)
+# ---------------------------
 DOMAIN-SUFFIX,music.apple.com,DIRECT
 DOMAIN-SUFFIX,audio-ssl.itunes.apple.com,DIRECT
 DOMAIN-SUFFIX,isub.apple.com,DIRECT
 
-# Apple ID 和登录服务
+# ---------------------------
+# Apple ID 和登录 (Apple ID & Login)
+# ---------------------------
 DOMAIN-SUFFIX,appleid.apple.com,DIRECT
 DOMAIN-SUFFIX,iforgot.apple.com,DIRECT
 DOMAIN-SUFFIX,signin.apple.com,DIRECT
+DOMAIN,appleid.cdn-apple.com,DIRECT // Apple ID CDN
+DOMAIN,idmsa.apple.com,DIRECT // Apple ID 服务
+DOMAIN,gsa.apple.com,DIRECT // Apple ID 认证
 
-# 设备激活和更新
-DOMAIN-SUFFIX,gs.apple.com,DIRECT
-DOMAIN-SUFFIX,swcdn.apple.com,DIRECT
-DOMAIN-SUFFIX,updates.cdn-apple.com,DIRECT
+# ---------------------------
+# 推送服务和设备管理 (Push & Device Management)
+# ---------------------------
+DOMAIN-SUFFIX,push.apple.com,DIRECT // 推送通知
+DOMAIN,identity.apple.com,DIRECT // APNs 证书请求门户
+DOMAIN,deviceenrollment.apple.com,DIRECT // DEP 设备注册
+DOMAIN,deviceservices-external.apple.com,DIRECT // 设备服务
+DOMAIN,gdmf.apple.com,DIRECT // MDM 软件更新识别
+DOMAIN,iprofiles.apple.com,DIRECT // 校园/商务管理注册描述文件
+DOMAIN,mdmenrollment.apple.com,DIRECT // MDM 注册
+DOMAIN,setup.icloud.com,DIRECT // iPad 共享管理式 Apple ID 登录
+DOMAIN,vpp.itunes.apple.com,DIRECT // MDM "App 和图书" 操作
 
-# 系统更新和 Beta 版本更新
-DOMAIN-SUFFIX,swcdn.apple.com,DIRECT
-DOMAIN-SUFFIX,updates.cdn-apple.com,DIRECT
-DOMAIN-SUFFIX,mesu.apple.com,DIRECT
-DOMAIN-SUFFIX,beta.apple.com,DIRECT
-DOMAIN-SUFFIX,appleseed.apple.com,DIRECT
+# ---------------------------
+# 设备激活和时间服务 (Device Activation & Time)
+# ---------------------------
+DOMAIN,albert.apple.com,DIRECT // 设备激活
+DOMAIN,captive.apple.com,DIRECT // 强制门户网络验证
+DOMAIN,gs.apple.com,DIRECT // 设备激活
+DOMAIN,humb.apple.com,DIRECT
+DOMAIN,static.ips.apple.com,DIRECT
+DOMAIN,sq-device.apple.com,DIRECT // eSIM 激活
+DOMAIN,tbsc.apple.com,DIRECT
+DOMAIN,time-ios.apple.com,DIRECT // iOS 时间设置
+DOMAIN,time.apple.com,DIRECT // 时间设置
+DOMAIN,time-macos.apple.com,DIRECT // macOS 时间设置
 
-# Apple CDN
-DOMAIN-SUFFIX,cdn-apple.com,DIRECT
-DOMAIN-SUFFIX,apple-cdn.com,DIRECT
-DOMAIN-SUFFIX,cdn.apple.com,DIRECT
-DOMAIN-SUFFIX,akamai.net,DIRECT
-DOMAIN-SUFFIX,akamaiedge.net,DIRECT
+# ---------------------------
+# 系统更新和恢复服务 (System Updates & Recovery)
+# ---------------------------
+DOMAIN,appldnld.apple.com,DIRECT // iOS、iPadOS、watchOS 更新
+DOMAIN,configuration.apple.com,DIRECT // Rosetta 2 更新
+DOMAIN,gg.apple.com,DIRECT // Apple 设备系统更新
+DOMAIN,ig.apple.com,DIRECT // macOS 更新
+DOMAIN,mesu.apple.com,DIRECT // 托管软件更新目录
+DOMAIN,oscdn.apple.com,DIRECT // macOS 恢复
+DOMAIN,osrecovery.apple.com,DIRECT // macOS 恢复
+DOMAIN,swcdn.apple.com,DIRECT // 软件更新 CDN
+DOMAIN,swscan.apple.com,DIRECT // macOS 更新扫描
+DOMAIN,swdist.apple.com,DIRECT // macOS 更新分发
+DOMAIN,swdownload.apple.com,DIRECT // macOS 更新下载
+DOMAIN,updates-http.cdn-apple.com,DIRECT // 软件更新下载
+DOMAIN,updates.cdn-apple.com,DIRECT // 软件更新 CDN
+DOMAIN,xp.apple.com,DIRECT
+DOMAIN,fba.apple.com,DIRECT // Apple 支付相关
+DOMAIN,cssubmissions.apple.com,DIRECT // CSS 提交相关
 
-# Apple 开发者与测试工具
-DOMAIN-SUFFIX,developer.apple.com,DIRECT
-DOMAIN-SUFFIX,testflight.apple.com,DIRECT
-DOMAIN-SUFFIX,feedbackassistant.apple.com,DIRECT
+# ---------------------------
+# 网络与支付服务 (Network & Payment Services)
+# ---------------------------
+DOMAIN,bpapi.apple.com,DIRECT // Apple 支付相关
 
-# Apple Mail 邮件服务
-DOMAIN-SUFFIX,mail.me.com,DIRECT
-DOMAIN-SUFFIX,mail.mac.com,DIRECT
-DOMAIN-SUFFIX,smtp.mail.me.com,DIRECT
-DOMAIN-SUFFIX,imap.mail.me.com,DIRECT
-
-# 动态代理组
-DOMAIN-SUFFIX,apple.com,Apple Services
+# ---------------------------
+# IP 列表 (IP List)
+# ---------------------------
+IP-CIDR,17.249.0.0/16,no-resolve
+IP-CIDR,17.252.0.0/16,no-resolve
+IP-CIDR,17.57.144.0/22,no-resolve
+IP-CIDR,17.188.128.0/18,no-resolve
+IP-CIDR,17.188.20.0/23,no-resolve
+IP-CIDR,139.178.128.0/18,no-resolve
+IP-CIDR,144.178.0.0/19,no-resolve
+IP-CIDR,144.178.36.0/22,no-resolve
+IP-CIDR,144.178.48.0/20,no-resolve
+IP-CIDR,192.35.50.0/24,no-resolve
+IP-CIDR,198.183.17.0/24,no-resolve
+IP-CIDR,205.180.175.0/24,no-resolve
+IP-CIDR,63.92.224.0/19,no-resolve
+IP-CIDR,65.199.22.0/23,no-resolve
+IP-CIDR6,2620:149:a44::/48,no-resolve
+IP-CIDR6,2403:300:a42::/48,no-resolve
+IP-CIDR6,2403:300:a51::/48,no-resolve
+IP-CIDR6,2a01:b740:a42::/48,no-resolve
 
 # 备用策略，默认直连
 FINAL,DIRECT
