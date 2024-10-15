@@ -19,3 +19,76 @@ DOMAIN,smtp.office365.com
 DOMAIN-SUFFIX,imap.yandex.com
 DOMAIN-SUFFIX,m.hotmail.com
 DOMAIN-SUFFIX,smtp.yandex.com
+
+# iCloud 服务
+DOMAIN-SUFFIX,icloud.com,DIRECT
+DOMAIN-SUFFIX,icloud-content.com,DIRECT
+DOMAIN-SUFFIX,icloud-drive.com,DIRECT
+DOMAIN-SUFFIX,icloud-backup.com,DIRECT
+DOMAIN-SUFFIX,icloud-photo-sharing.com,DIRECT
+DOMAIN-SUFFIX,icloudmail.com,DIRECT
+
+# Apple Mail 邮件服务
+DOMAIN-SUFFIX,mail.me.com,DIRECT
+DOMAIN-SUFFIX,mail.mac.com,DIRECT
+DOMAIN-SUFFIX,smtp.mail.me.com,DIRECT
+DOMAIN-SUFFIX,imap.mail.me.com,DIRECT
+
+# App Store & iTunes
+DOMAIN-SUFFIX,apps.apple.com,DIRECT
+DOMAIN-SUFFIX,itunes.apple.com,DIRECT
+DOMAIN-SUFFIX,a1.mzstatic.com,DIRECT
+DOMAIN-SUFFIX,a2.mzstatic.com,DIRECT
+DOMAIN-SUFFIX,a3.mzstatic.com,DIRECT
+DOMAIN-SUFFIX,appstore.com,DIRECT
+DOMAIN-SUFFIX,mzstatic.com,DIRECT
+
+# App Store API 调用
+DOMAIN-SUFFIX,buy.itunes.apple.com,DIRECT
+DOMAIN-SUFFIX,init.itunes.apple.com,DIRECT
+
+# Apple Music
+DOMAIN-SUFFIX,music.apple.com,DIRECT
+DOMAIN-SUFFIX,audio-ssl.itunes.apple.com,DIRECT
+DOMAIN-SUFFIX,isub.apple.com,DIRECT
+
+# Apple ID 和登录服务
+DOMAIN-SUFFIX,appleid.apple.com,DIRECT
+DOMAIN-SUFFIX,iforgot.apple.com,DIRECT
+DOMAIN-SUFFIX,signin.apple.com,DIRECT
+
+# 设备激活和更新
+DOMAIN-SUFFIX,gs.apple.com,DIRECT
+DOMAIN-SUFFIX,swcdn.apple.com,DIRECT
+DOMAIN-SUFFIX,updates.cdn-apple.com,DIRECT
+
+# 系统更新和 Beta 版本更新
+DOMAIN-SUFFIX,swcdn.apple.com,DIRECT
+DOMAIN-SUFFIX,updates.cdn-apple.com,DIRECT
+DOMAIN-SUFFIX,mesu.apple.com,DIRECT
+DOMAIN-SUFFIX,beta.apple.com,DIRECT
+DOMAIN-SUFFIX,appleseed.apple.com,DIRECT
+
+# Apple CDN
+DOMAIN-SUFFIX,cdn-apple.com,DIRECT
+DOMAIN-SUFFIX,apple-cdn.com,DIRECT
+DOMAIN-SUFFIX,cdn.apple.com,DIRECT
+DOMAIN-SUFFIX,akamai.net,DIRECT
+DOMAIN-SUFFIX,akamaiedge.net,DIRECT
+
+# Apple 开发者与测试工具
+DOMAIN-SUFFIX,developer.apple.com,DIRECT
+DOMAIN-SUFFIX,testflight.apple.com,DIRECT
+DOMAIN-SUFFIX,feedbackassistant.apple.com,DIRECT
+
+# Apple Mail 邮件服务
+DOMAIN-SUFFIX,mail.me.com,DIRECT
+DOMAIN-SUFFIX,mail.mac.com,DIRECT
+DOMAIN-SUFFIX,smtp.mail.me.com,DIRECT
+DOMAIN-SUFFIX,imap.mail.me.com,DIRECT
+
+# 动态代理组
+DOMAIN-SUFFIX,apple.com,Apple Services
+
+# 备用策略，默认直连
+FINAL,DIRECT
