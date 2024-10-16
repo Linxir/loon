@@ -26,11 +26,23 @@ DOMAIN,outlook.office365.com,DIRECT
 # iCloud 服务 (iCloud Services)
 # ---------------------------
 DOMAIN-SUFFIX,icloud.com,DIRECT
+DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT
+DOMAIN-SUFFIX,apple-livephotoskit.com,DIRECT
+DOMAIN-SUFFIX,apzones.com,DIRECT
+DOMAIN-SUFFIX,cdn-apple.com,DIRECT
+DOMAIN-SUFFIX,gc.apple.com,DIRECT
+DOMAIN-SUFFIX,icloud.com.cn,DIRECT
+DOMAIN-SUFFIX,icloud.apple.com,DIRECT
+DOMAIN-SUFFIX,icloud-content.com,DIRECT
+DOMAIN-SUFFIX,iwork.apple.com,DIRECT
 DOMAIN-SUFFIX,icloud-content.com,DIRECT
 DOMAIN-SUFFIX,icloud-drive.com,DIRECT
 DOMAIN-SUFFIX,icloud-backup.com,DIRECT
 DOMAIN-SUFFIX,icloud-photo-sharing.com,DIRECT
 DOMAIN-SUFFIX,icloudmail.com,DIRECT
+DOMAIN,mask.icloud.com,DIRECT
+DOMAIN,mask-h2.icloud.com,DIRECT
+DOMAIN,mask-api.icloud.com,DIRECT
 
 # --------------------------------------
 # App Store 和应用更新 (App Store & Updates)
@@ -53,6 +65,7 @@ DOMAIN-SUFFIX,isub.apple.com,DIRECT
 DOMAIN-SUFFIX,appleid.apple.com,DIRECT
 DOMAIN-SUFFIX,iforgot.apple.com,DIRECT
 DOMAIN-SUFFIX,signin.apple.com,DIRECT
+DOMAIN,account.apple.com,DIRECT // 设置和系统偏好设置中的 Apple 账户认证
 DOMAIN,appleid.cdn-apple.com,DIRECT // Apple ID CDN
 DOMAIN,idmsa.apple.com,DIRECT // Apple ID 服务
 DOMAIN,gsa.apple.com,DIRECT // Apple ID 认证
@@ -64,7 +77,6 @@ DOMAIN-SUFFIX,push.apple.com,DIRECT // 推送通知
 DOMAIN,identity.apple.com,DIRECT // APNs 证书请求门户
 DOMAIN,deviceenrollment.apple.com,DIRECT // DEP 设备注册
 DOMAIN,deviceservices-external.apple.com,DIRECT // 设备服务
-DOMAIN,gdmf.apple.com,DIRECT // MDM 软件更新识别
 DOMAIN,iprofiles.apple.com,DIRECT // 校园/商务管理注册描述文件
 DOMAIN,mdmenrollment.apple.com,DIRECT // MDM 注册
 DOMAIN,setup.icloud.com,DIRECT // iPad 共享管理式 Apple ID 登录
@@ -75,7 +87,6 @@ DOMAIN,vpp.itunes.apple.com,DIRECT // MDM "App 和图书" 操作
 # ---------------------------
 DOMAIN,albert.apple.com,DIRECT // 设备激活
 DOMAIN,captive.apple.com,DIRECT // 强制门户网络验证
-DOMAIN,gs.apple.com,DIRECT // 设备激活
 DOMAIN,humb.apple.com,DIRECT
 DOMAIN,static.ips.apple.com,DIRECT
 DOMAIN,sq-device.apple.com,DIRECT // eSIM 激活
@@ -89,9 +100,12 @@ DOMAIN,time-macos.apple.com,DIRECT // macOS 时间设置
 # ---------------------------
 DOMAIN,appldnld.apple.com,DIRECT // iOS、iPadOS、watchOS 更新
 DOMAIN,configuration.apple.com,DIRECT // Rosetta 2 更新
+DOMAIN,gdmf.apple.com,DIRECT // 软件更新目录
 DOMAIN,gg.apple.com,DIRECT // Apple 设备系统更新
+DOMAIN,gs.apple.com,DIRECT // 系统更新
 DOMAIN,ig.apple.com,DIRECT // macOS 更新
 DOMAIN,mesu.apple.com,DIRECT // 托管软件更新目录
+DOMAIN,ns.itunes.apple.com,DIRECT
 DOMAIN,oscdn.apple.com,DIRECT // macOS 恢复
 DOMAIN,osrecovery.apple.com,DIRECT // macOS 恢复
 DOMAIN,swcdn.apple.com,DIRECT // 软件更新 CDN
@@ -101,13 +115,10 @@ DOMAIN,swdownload.apple.com,DIRECT // macOS 更新下载
 DOMAIN,updates-http.cdn-apple.com,DIRECT // 软件更新下载
 DOMAIN,updates.cdn-apple.com,DIRECT // 软件更新 CDN
 DOMAIN,xp.apple.com,DIRECT
-DOMAIN,fba.apple.com,DIRECT // Apple 支付相关
-DOMAIN,cssubmissions.apple.com,DIRECT // CSS 提交相关
+DOMAIN,bpapi.apple.com,DIRECT // Beta 版更新注册
+DOMAIN,fba.apple.com,DIRECT // 供反馈助理用来归档和查看反馈
+DOMAIN,cssubmissions.apple.com,DIRECT // 供反馈助理用来上传文件
 
-# ---------------------------
-# 网络与支付服务 (Network & Payment Services)
-# ---------------------------
-DOMAIN,bpapi.apple.com,DIRECT // Apple 支付相关
 
 # ---------------------------
 # IP 列表 (IP List)
